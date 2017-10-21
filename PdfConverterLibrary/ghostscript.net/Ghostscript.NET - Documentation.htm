@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="FF" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#" lang="en"><head>
+        <meta id="CompatabilityMode" http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="Ghostscript.NET%20-%20Documentation-Dateien/StyleSheet.css" id="MasterCss" rel="stylesheet" type="text/css">
+        <link rel="SHORTCUT ICON" href="https://www.codeplex.com/favicon.ico">
+        <title>Ghostscript.NET - Documentation</title>
+        
+       
+            <script type="text/javascript">
+                var mscc = {
+                    hasConsent: function() {
+                        return true;
+                    },
+                    setConsent: function() {
+                    }
+                }
+                var msccHadCookieBannerAtPageStart = false;
+            </script>
+        
+
+        <!--
+        Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code,
+        not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.
+        -->
+        <script src="Ghostscript.NET%20-%20Documentation-Dateien/jquery-1.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            if (typeof jQuery === 'undefined') {
+                document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <script src="Ghostscript.NET%20-%20Documentation-Dateien/jquery-ui.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            if (typeof jQuery.ui === 'undefined') {
+                document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        
+            <script type="text/javascript">
+                var appInsights=window.appInsights||function(config){
+                    function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
+                }({
+                    instrumentationKey:"3a5c29be-06e6-465e-862f-c10a5d93d3a2"
+                });
+    
+                window.appInsights=appInsights;
+                appInsights.trackPageView();
+            </script><script src="Ghostscript.NET%20-%20Documentation-Dateien/ai.js"></script>
+        
+    <style type="text/css">.SideBar, .SideBarPadding{display:none;}.MainContent{width:auto;}.SiteContentTable{width:100%;}</style>
+    <style id="ProjectStyles" type="text/css">
+        .SiteHeader, .SiteHeaderLeft {
+            height:45px !important;
+            overflow:hidden;
+        }
+        .SiteContent 
+        {
+            padding: 0 0 1em 0;
+            margin-top:0;
+            min-height:225px;
+            border-right: 1px solid lightgrey;
+            border-left: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+        }
+        .IE table.MinWidthContent
+        {
+	        table-layout: auto !important;	
+        }
+    </style>
+    
+    
+    <style type="text/css">.ProjectContent{padding:0;}</style>
+    <style type="text/css">
+        .WikiHolder
+        {
+            margin: 0 1em 0 0;
+        }
+        #WikiContent
+        {
+            margin-top: 15px;
+        }
+        #WikiBreadCrumbs
+        {
+            margin: 0.25em 0 1em 0;
+        }
+        .SecondarySearchButton 
+        {
+            margin:0 0 0 -0.6em;
+        }
+        .FF .SecondarySearchButton 
+        {
+            margin:-0.1em 0 0 -0.5em;
+            height: 22px;
+        }
+        .IE .SecondarySearchButton
+        {
+            width: 22px;
+            height: 22px;
+        }
+    </style>
+    
+    
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    
+    
+    
+    <meta id="WTProjectName" name="WT.pi" content="ghostscriptnet">
+    
+
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ghostscriptnet.codeplex.com/rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" title="WLWManifest" href="https://www.codeplex.com/wlwmanifest.xml">
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET" url="https://ghostscriptnet.codeplex.com/project/feeds/rss">
+    
+        
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET - Discussions" url="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fghostscriptnet">
+        
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET - Issues" url="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fghostscriptnet">
+        
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET - Downloads" url="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fghostscriptnet">
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET - Reviews" url="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fghostscriptnet">
+        
+    
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET - Source code" url="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fghostscriptnet">
+        <link rel="alternate" type="application/rss+xml" title="Ghostscript.NET - Wiki" url="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fghostscriptnet">
+    
+        
+    
+        <meta content="summary" name="twitter:card"><meta content="@CodePlex" name="twitter:site"><meta content="https://ghostscriptnet.codeplex.com/documentation?ProjectName=ghostscriptnet" name="twitter:url"><meta content="Ghostscript.NET" name="twitter:title"><meta content="Ghostscript.NET is a C&amp;#35; managed wrapper library around the 32-bit &amp;#38; 64-bit Ghostscript library, an interpreter for the PostScript language and the PDF." name="twitter:description"><meta content="https://www.codeplex.com/Images/codeplex.png" name="twitter:image"><meta content="CodePlex" property="og:site_name"><meta content="https://ghostscriptnet.codeplex.com/documentation?ProjectName=ghostscriptnet" property="og:url"><meta content="object" property="og:type"><meta content="Ghostscript.NET" property="og:title"><meta content="Ghostscript.NET is a C&amp;#35; managed wrapper library around the 32-bit &amp;#38; 64-bit Ghostscript library, an interpreter for the PostScript language and the PDF." property="og:description"><meta content="https://www.codeplex.com/Images/codeplex.png" property="og:image">
+        
+
+    <script type="text/javascript" async="" src="Ghostscript.NET%20-%20Documentation-Dateien/a.js"></script><script type="text/javascript" async="" src="Ghostscript.NET%20-%20Documentation-Dateien/a_002.js"></script></head>
+    
+    <body class=" NoImages">
+        <script src="Ghostscript.NET%20-%20Documentation-Dateien/ScriptLoader.ashx" type="text/javascript"></script>
+        <form id="aspnetForm" autocomplete="off" method="POST" enctype="multipart/form-data">
+            <input name="__RequestVerificationToken" value="ZXRzpi-gLxezRe6UM4wLxncRa2F5IwK01Vb0d-hQgqKSEoCdc8YC3ORg6lTf3gqRo0Xd3l7W6l9ZjZOnG1FqUcwfsIwhHyiPyCssPseOANAyxddH9WzWgG3TTrqoJUwE6BincA2" type="hidden">
+            
+            
+            
+            <div style="display:none;">
+                
+                <img id="BlankImage" style="width:0;height:0;" src="Ghostscript.NET%20-%20Documentation-Dateien/blank.png" onload="self.logoImageLoaded=true;">
+
+                <script language="javascript" type="text/javascript">
+                    var date = new Date();
+                    var timezoneOffset = date.getTimezoneOffset() / 60 * -1;
+                    var timezoneOffsetCookie = getCookie("TimezoneOffset");
+                    var firstTimeSetTimezoneCookie = false;
+
+                    if (timezoneOffsetCookie == null || timezoneOffsetCookie != timezoneOffset) {
+                        firstTimeSetTimezoneCookie = true;
+                        document.cookie = "TimezoneOffset=" + timezoneOffset + '; domain=.codeplex.com;expires=So, 21 Okt 2018 05:13:14 UTC';
+                    }
+                </script>
+            </div>
+            
+            
+            <div id="banner">
+                <div id="message">
+                    <strong>CodePlex is going read-only starting November 6th.  </strong><a href="https://aka.ms/codeplex-readonly">Learn more and find next steps.</a>
+                </div>
+            </div>
+            
+
+            <div id="header">
+                <div id="header_wrap" class="row"><p role="alert" style="height: 1px;width: 1px;overflow: hidden;position: absolute;"></p>
+                    <p id="logo"><a href="https://www.codeplex.com/">Code<span class="semi">Plex</span></a><span id="tagline">Project Hosting for Open Source Software</span></p>
+                    
+
+<ul id="nav">
+
+    <li><a href="https://www.codeplex.com/site/register/new" id="registerLink" class="ZoomFix">Register</a></li>
+    <li><a class="SignInLink" href="https://www.codeplex.com/site/login?RedirectUrl=https%3a%2f%2fghostscriptnet.codeplex.com%2fdocumentation" id="signInLink">Sign In</a></li>
+  
+    <li class="last"><a class="rss_site_icon" href="https://www.codeplex.com/site/feeds/rss" type="application/rss+xml" rel="Alternate" title="CodePlex Site Activity"></a></li>
+</ul>
+                    <input id="searchsite" name="searchsite" maxlength="500" autocomplete="off" data-searchtype="searchbox" role="combobox" aria-label="Search Input Box" aria-autocomplete="both" aria-owns="MSDNSearchAutoCompleteList" aria-live="polite" placeholder="Search all projects" title="Search all projects" type="text"><span id="search_mag"><a id="submitSearch" name="submitSearch" class="magnify" title="Search all projects" href="#" data-searchtype="icon"></a></span>
+                    <script>
+	$(document).ready(function() {
+    var searchButton = $('#submitSearch'),
+        searchBar = $('#searchsite');
+
+    // Register our own handler for the search event while we wait for the SearchBox script to load.
+    searchButton.bind('click.backupSearchBox', doProjectSearch);
+    searchBar.bind('keypress.backupSearchBox', function(e) { if ($keyCode(e) === 13) { doProjectSearch(); return false; } });
+
+    function cleanupSearchEvents() {
+        // If the SearchBox was loaded, unregister our handlers.
+        if (epx_loaded) {
+            searchButton.unbind('.backupSearchBox');
+            searchBar.unbind('.backupSearchBox');
+        }
+    }
+
+    $loadScript('https://services.social.microsoft.com/search/Widgets/SearchBox.jss?appid=1000&scopeid=1&boxId=searchsite&btnId=submitSearch&watermark=Search%20all%20projects&overrideWatermark=true&searchLocation=https%3a%2f%2fwww.codeplex.com%2fsite%2fsearch&allowEmptySearch=true&focusOnInit=False&minimumTermLength=3', cleanupSearchEvents);
+})
+function doProjectSearch() {
+    
+    var url = 'https://www.codeplex.com/site/search';
+
+    //If search term is not same as watermark
+    if($('#searchsite').val() != 'Search all projects')    
+    {        
+        url = url + '?query=' + encodeURIComponent($('#searchsite').val());
+    }
+
+    
+    var callback = '';
+    if (callback.length > 0 && eval('typeof ' + callback) != 'undefined')
+        url += eval(callback + '()');
+
+    window.location.href = url;
+    return false;
+}
+</script>
+                <div id="SearchFlyoutContainer" style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; background-color: rgb(255, 255, 255); color: rgb(122, 132, 142); font-family: &quot;Segoe UI&quot;,&quot;Microsoft Sans Serif&quot;,Arial,Geneva,sans-serif; font-size: 13px;"><div id="SuggestionContainer"><ul style="list-style: outside none none; padding: 4px 2px 0px 1px; cursor: pointer; margin: 1px; white-space: nowrap;" data-searchtype="search dropdown" id="MSDNSearchAutoCompleteList" role="listbox" aria-controls="searchsite"></ul></div></div></div>
+            </div>
+            
+            <div id="wrap">
+                
+    <div id="sub_heading" class="row">
+        
+        <div id="ProjectHeader">
+            <div id="project_title_row" class="row">
+                <div id="project_logo">
+                    
+    
+    <h1><a href="https://ghostscriptnet.codeplex.com/"><img src="Ghostscript.NET%20-%20Documentation-Dateien/Download.htm" alt="Ghostscript.NET"></a></h1>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="ProjectDetailsDiv">
+            
+        </div>
+		<div class="clear"></div>
+        
+
+<ul id="page_box_links">
+	<li id="homeTabCell" style="width: 75px;"><a id="homeTab" href="https://ghostscriptnet.codeplex.com/" class="box_home">home</a><div></div></li>
+    
+	<li id="sourceTabCell" style="width: 125px;"><a id="sourceTab" href="https://ghostscriptnet.codeplex.com/SourceControl/latest" class="box_source">source code</a><div></div></li>
+    
+	<li id="releasesTabCell" style="width: 117px;"><a id="releasesTab" href="https://ghostscriptnet.codeplex.com/releases" class="box_downloads">downloads</a><div></div></li>
+    
+    <li id="documentationTabCell" style="width: 155px;"><a id="documentationTab" href="https://ghostscriptnet.codeplex.com/documentation" class="documentation_active">documentation</a><div></div></li>
+    
+	<li id="discussionTabCell" style="width: 124px;"><a id="discussionTab" href="https://ghostscriptnet.codeplex.com/discussions" class="box_discussions">discussions</a><div></div></li>
+    
+	<li id="workItemsTabCell" style="width: 82px;"><a id="workItemsTab" href="https://ghostscriptnet.codeplex.com/workitem/list/basic" class="box_issue">issues</a><div></div></li>
+    
+	<li id="peopleTabCell" style="width: 82px;"><a id="peopleTab" href="https://ghostscriptnet.codeplex.com/team/view" class="box_people">people</a><div></div></li>
+	<li id="licenseTabCell" style="width: 82px;" class="last"><a id="licenseTab" href="https://ghostscriptnet.codeplex.com/license" class="box_license">license</a><div></div></li>
+    
+    <span class="stretch"></span>
+</ul>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#page_box_links').applyLastClassToList();
+    });
+</script>
+		    <div class="clear"></div>
+            
+    <div id="DeleteWikiPagePanel" class="modal" style="display: none;">
+        <div class="row">
+            <h2>Are you Sure? <a href="javascript:return%20false;" class="close">X</a></h2>
+        </div>
+        <div class="modal_info">
+            By clicking Delete, all history, comments and attachments for this page will be deleted and cannot be restored.
+            <div class="modal_buttons">
+                <input id="CancelButton" class="cancel" value="Cancel" type="button">
+                <input id="DeleteButton" class="ok" value="Delete" type="button">
+            </div>
+            <div class="ClearBoth"></div>
+        </div>
+    </div>
+    
+    <div id="homepage_sub_menu">
+		<ul class="page_box_sublinks">
+            
+                <li><a id="pageInfoHyperLink" href="https://ghostscriptnet.codeplex.com/wiki/PageInfo?title=Documentation" title="Page information for Documentation page.">Page Info</a></li>
+            
+            <li class="last"><a id="changesHyperlink" href="https://ghostscriptnet.codeplex.com/wikipage/history" title="View change history for all pages.">Change History (all pages)</a></li>
+		</ul>
+        
+
+<div>
+    
+    <div id="actionBar" class="action_bar">
+        <ul id="actionBar_ul" class="actionBar_sublinks subtab_right" style="vertical-align: middle;">
+
+            
+
+                <li id="li_actionbar_followproject" data-action-id="actionbar_followproject" data-action-type="None" class="actionBar_sublinks" data-options-id="fcd7a254-3059-43ec-9989-9f8baabf0671">
+                
+                     
+                    
+                    <div class="actionBar_custom_content"></div>
+
+                    <a href="#" id="actionbar_followproject" title="Follow this project to get updates in your activity stream." class="action_bar_item_link"><img id="img_actionbar_followproject" class="action_bar_item_image" src="Ghostscript.NET%20-%20Documentation-Dateien/actionbar_follow.png" style="vertical-align: middle"> Follow (41)</a>
+
+                </li>
+
+            
+
+                <li id="li_actionbar_subscribe" data-action-id="actionbar_subscribe" data-action-type="PopUp" class="actionBar_sublinks last" data-options-id="18246c54-d5aa-4111-b4b5-23ef2aa2e371">
+                
+                    <script class="options" defer="defer" id="18246c54-d5aa-4111-b4b5-23ef2aa2e371" type="application/json">{}</script> 
+                    
+                    <div class="actionBar_custom_content">
+
+<div id="rssHoverDiv" class="HoverPanel LeftHoverWidth" style="display: none">
+        <ul id="3_FeedsPanel" class="RssFeedsPanel">
+            <li>
+                <a id="ProjectRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss" class="ArrowSmall NoUnderline">All Project Updates</a>
+            </li>
+            
+            <li>
+                <a id="DiscussionRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fghostscriptnet" class="ArrowSmall NoUnderline">Discussions</a>
+            </li>
+            
+            <li>
+                <a id="IssueTrackerRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fghostscriptnet" class="ArrowSmall NoUnderline">Issue Tracker</a>
+            </li>
+            
+            <li>
+                <a id="ReleasesRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fghostscriptnet" class="ArrowSmall NoUnderline">Downloads</a>
+            </li>
+            <li>
+                <a id="ReviewsRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fghostscriptnet" class="ArrowSmall NoUnderline">Reviews</a>
+            </li>
+            
+            <li>
+                <a id="SourceControlRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fghostscriptnet" class="ArrowSmall NoUnderline">Source Code</a>
+            </li>
+            <li>
+                <a id="WikiRssLink" href="https://ghostscriptnet.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fghostscriptnet" class="ArrowSmall NoUnderline">Wiki &amp; Documentation</a>
+            </li>
+        </ul>
+</div></div>
+
+                    <a href="#" id="actionbar_subscribe" title="Subscribe to project updates in RSS feeds." class="action_bar_item_link">
+                        <img id="img_actionbar_subscribe" class="action_bar_item_image" src="Ghostscript.NET%20-%20Documentation-Dateien/actionbar_subscribe.png" style="vertical-align: middle">
+                        Subscribe
+                    </a>
+
+                </li>
+
+            
+        </ul>
+    </div>
+</div>
+        <div class="clear"></div>
+    </div>
+    
+        
+
+    </div>
+    
+    
+    
+<div id="left_column" class="no_border">
+    
+
+    <div class="WikiHolder">
+
+        
+            <div id="WikiContent" class="WikiContent">
+                
+<div class="wikidoc">
+<p><br>
+<span style="color:#000080"><strong><em>Search&nbsp;for the installed Ghostscript libraries:</em></strong></span></p>
+<pre>List&lt;GhostscriptVersionInfo&gt; gsVersions =
+    GhostscriptVersionInfo.GetInstalledVersions(GhostscriptLicense.GPL | GhostscriptLicense.AFPL);
+</pre>
+<p><br>
+<br>
+<span style="color:#000080"><strong><em>Using GhostscriptRasterizer class:</em></strong></span></p>
+<pre>using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+
+// required Ghostscript.NET namespaces
+using Ghostscript.NET;
+using Ghostscript.NET.Rasterizer;
+
+namespace Ghostscript.NET.Samples
+{
+    public class RasterizerSample : ISample
+    {
+        private GhostscriptVersionInfo _lastInstalledVersion = null;
+        private GhostscriptRasterizer _rasterizer = null;
+
+        public void Start()
+        {
+            int desired_x_dpi = 96;
+            int desired_y_dpi = 96;
+
+            string inputPdfPath = @"F:\pdf\155.pdf";
+            string outputPath = @"E:\_pdf_out\";
+
+            _lastInstalledVersion = 
+                GhostscriptVersionInfo.GetLastInstalledVersion(
+                        GhostscriptLicense.GPL | GhostscriptLicense.AFPL, 
+                        GhostscriptLicense.GPL);
+
+            _rasterizer = new GhostscriptRasterizer();
+
+            _rasterizer.Open(inputPdfPath, _lastInstalledVersion, false);
+
+            for (int pageNumber = 1; pageNumber &lt;= _rasterizer.PageCount; pageNumber++)
+            {
+                string pageFilePath = Path.Combine(outputPath, "Page-" + pageNumber.ToString() + ".png");
+
+                Image img = _rasterizer.GetPage(desired_x_dpi, desired_y_dpi, pageNumber);
+                img.Save(pageFilePath, ImageFormat.Png);
+                
+                Console.WriteLine(pageFilePath);
+            }
+        }
+    }
+}
+</pre>
+<p><br>
+<br>
+<span style="color:#000080"><strong><em>Render postscript to the screen:</em></strong></span></p>
+<pre>_interpreter = new GhostscriptInterpreter(lastVersion);
+_interpreter.Setup(new StdIOHandler(txtOutput), new DisplayHandler(_preview.pbDisplay));
+_interpreter.InitArgs(_args);
+_interpreter.Run(txtPostscript.Text);
+</pre>
+<p><br>
+<br>
+<span style="color:#000080"><strong><em>How to run multiple instances:</em></strong></span></p>
+<pre>// make sure that constructor 'fromMemory' option is set to true if 
+// you want to run multiple instances of the Ghostscript
+GhostscriptProcessor processor1 = new GhostscriptProcessor(_gs_verssion_info, true);
+GhostscriptProcessor processor2 = new GhostscriptProcessor(_gs_verssion_info, true);
+</pre>
+<p><br>
+<br>
+<span style="color:#000080"><strong><em>Using GhostscriptViewer class:</em></strong></span></p>
+<pre>using System;
+using System.Collections.Generic;
+using System.Drawing;
+
+// required Ghostscript.NET namespaces
+using Ghostscript.NET;
+using Ghostscript.NET.Viewer;
+
+namespace Ghostscript.NET.Samples.Samples
+{
+    public class DisplayPdfSample : ISample
+    {
+        private GhostscriptVersionInfo _lastInstalledVersion = null;
+        private GhostscriptViewer _viewer = null;
+        private Bitmap _pdfPage = null;
+
+        public void Start()
+        {
+            // there can be multiple Ghostscript versions installed on the system
+            // and we can choose which one we will use. In this sample we will use
+            // the last installed Ghostscript version. We can choose if we want to 
+            // use GPL or AFPL (commercial) version of the Ghostscript. By setting 
+            // the parameters below we told that we want to fetch the last version 
+            // of the GPL or AFPL Ghostscript and if both are available we prefer 
+            // to use GPL version.
+
+            _lastInstalledVersion = 
+                GhostscriptVersionInfo.GetLastInstalledVersion(
+                        GhostscriptLicense.GPL | GhostscriptLicense.AFPL, 
+                        GhostscriptLicense.GPL);
+
+            // create a new instance of the viewer
+            _viewer = new GhostscriptViewer();
+
+            // set the display update interval to 10 times per second. This value
+            // is milliseconds based and updating display every 100 milliseconds
+            // is optimal value. The smaller value you set the rasterizing will 
+            // take longer as DisplayUpdate event will be raised more often.
+            _viewer.ProgressiveUpdateInterval = 100;
+
+            // attach three main viewer events
+            _viewer.DisplaySize += new GhostscriptViewerViewEventHandler(_viewer_DisplaySize);
+            _viewer.DisplayUpdate += new GhostscriptViewerViewEventHandler(_viewer_DisplayUpdate);
+            _viewer.DisplayPage += new GhostscriptViewerViewEventHandler(_viewer_DisplayPage);
+
+            // open PDF file using the last Ghostscript version. If you want to use
+            // multiple viewers withing a single process then you need to pass 'true' 
+            // value as the last parameter of the method below in order to tell the
+            // viewer to load Ghostscript from the memory and not from the disk.
+            _viewer.Open("E:\test\test.pdf",_lastInstalledVersion, false);
+        }
+
+        // this is the first raised event before PDF page starts rasterizing. 
+        // this event is raised only once per page showing and it tells us 
+        // the dimensions of the PDF page and gives us page image reference.
+        void _viewer_DisplaySize(object sender, GhostscriptViewerViewEventArgs e)
+        {
+            // store PDF page image reference
+            _pdfPage = e.Image;
+        }
+
+        // this event is raised when a tile or the part of the page is rasterized
+        // code in this event must be fast or it will slow down the Ghostscript
+        // rasterizing. 
+        void _viewer_DisplayUpdate(object sender, GhostscriptViewerViewEventArgs e)
+        {
+            // if we are displaying the image in the PictureBox we can update 
+            // it by calling PictureBox.Invalidate() and PictureBox.Update()
+            // methods. We dont need to set image reference again because
+            // Ghostscript.NET is changing Image object directly in the
+            // memory and does not create new Bitmap instance.
+        }
+
+        // this is the last raised event after complete page is rasterized
+        void _viewer_DisplayPage(object sender, GhostscriptViewerViewEventArgs e)
+        {
+            // complete PDF page is rasterized and we can update our PictureBox
+            // once again by calling PictureBox.Invalidate() and PictureBox.Update()
+        }
+
+        // dummy method just to list other viewer properties and methods
+        private void Other_Viewer_Methods()
+        {
+            // show first pdf page
+            _viewer.ShowFirstPage();
+            // show previous pdf page
+            _viewer.ShowPreviousPage();
+            // show next pdf page
+            _viewer.ShowNextPage();
+            // show last pdf page
+            _viewer.ShowLastPage();
+            // show page based on page number
+            _viewer.ShowPage(6);
+            // refresh current page / rasterize it again
+            _viewer.RefreshPage();
+            // zoom in
+            _viewer.ZoomIn();
+            // zoom out
+            _viewer.ZoomOut();
+            // get first page number
+            int fpn = _viewer.FirstPageNumber;
+            // get last page number
+            int lpn = _viewer.LastPageNumber;
+            // get current page number
+            int cpn = _viewer.CurrentPageNumber;
+        }
+
+    }
+}
+</pre>
+<p><br>
+<br>
+<span style="color:#000080"><strong><em>Other:</em></strong></span></p>
+<pre>using System;
+using System.Collections.Generic;
+using System.Threading;
+
+namespace Ghostscript.NET.Samples
+{
+    public class RunMultipleInstancesSample : ISample
+    {
+        private GhostscriptVersionInfo _gs_verssion_info = 
+            
+GhostscriptVersionInfo.GetLastInstalledVersion(GhostscriptLicense.GPL | 
+GhostscriptLicense.AFPL, GhostscriptLicense.GPL);
+
+        public void Start()
+        {
+            ThreadPool.QueueUserWorkItem(new WaitCallback(Instance1));
+            ThreadPool.QueueUserWorkItem(new WaitCallback(Instance2));
+        }
+
+        private void Process(string input, string output, int startPage,
+ int endPage)
+        {
+            // make sure that constructor 'fromMemory' option is set to 
+true if 
+            // you want to run multiple instances of the Ghostscript
+            Ghostscript.NET.Processor.GhostscriptProcessor processor = 
+new Processor.GhostscriptProcessor(_gs_verssion_info, true);
+            processor.Process(CreateTestArgs(input, output, startPage, 
+endPage), new ConsoleStdIO(true, true, true));
+        }
+
+        private void Instance1(object target)
+        {
+            // export pdf pages to images
+            Process(@"E:\mc-1.pdf", @"E:\_pdf_out\a_test-%03d.png", 1, 
+100);
+        }
+
+        private void Instance2(object target)
+        {
+            // export pdf pages to images
+            Process(@"E:\mc-2.pdf", @"E:\_pdf_out\b_test-%03d.png", 1, 
+100);
+        }
+
+        private string[] CreateTestArgs(string inputPath, string 
+outputPath, int pageFrom, int pageTo)
+        {
+            List&lt;string&gt; gsArgs = new List&lt;string&gt;();
+
+            gsArgs.Add("-q");
+            gsArgs.Add("-dSAFER");
+            gsArgs.Add("-dBATCH");
+            gsArgs.Add("-dNOPAUSE");
+            gsArgs.Add("-dNOPROMPT");
+            gsArgs.Add(@"-sFONTPATH=" + 
+System.Environment.GetFolderPath(System.Environment.SpecialFolder.Fonts));
+
+            gsArgs.Add("-dFirstPage=" + pageFrom.ToString());
+            gsArgs.Add("-dLastPage=" + pageTo.ToString());
+            gsArgs.Add("-sDEVICE=png16m");
+            gsArgs.Add("-r72");
+            gsArgs.Add("-sPAPERSIZE=a4");
+            gsArgs.Add("-dNumRenderingThreads=" + 
+Environment.ProcessorCount.ToString());
+            gsArgs.Add("-dTextAlphaBits=4");
+            gsArgs.Add("-dGraphicsAlphaBits=4");
+            gsArgs.Add(@"-sOutputFile=" + outputPath);
+            gsArgs.Add(@"-f" + inputPath);
+
+            return gsArgs.ToArray();
+        }
+    }
+}
+</pre>
+</div>
+<div></div>
+
+            </div>
+        
+                <p>Last edited <span class="smartDate" title="07.04.2014 12:14:09" localtimeticks="1396898049">Apr 7, 2014 at 12:14 PM</span> by <a id="wikiEditByLink" href="https://www.codeplex.com/site/users/view/josip">josip</a>, version 9</p>
+            
+                <div id="Comments">
+                    
+
+<script type="text/javascript">
+    var commentCount = 2;
+    function addComment() {
+        var input = $('#Comment');
+        input.val($.trim(input.val()));
+        if (MvcValidation_Validate('AddComment')) {
+            CodePlex.UpdateProgress.show();
+            
+$.post('https://ghostscriptnet.codeplex.com/wikipage/comment', { 
+Comment: input.val(), title: $('#WikiTitle').val() }, function(data, 
+textStatus) {
+                if (textStatus == 'success') {
+                    if(commentCount++ == 0)
+                        $('#wikiCommentsEmpty').empty();
+                    $('#wikiComments').append(data);
+                    input.val('');
+                }
+                CodePlex.UpdateProgress.hide();
+            });
+        }
+    }
+    function deleteComment(id) {
+        if (confirm('Are you sure you want to delete this comment?')) {
+            CodePlex.UpdateProgress.show();
+            $.ajax({
+                type: 'DELETE',
+                url: 
+'https://ghostscriptnet.codeplex.com/wikipage/comment' + '/' + id,
+                success: function() {
+                    $('#comment' + id).empty();
+                    CodePlex.UpdateProgress.hide();
+                },
+                error: function() { CodePlex.UpdateProgress.hide(); }
+            });
+        }
+    }
+</script>
+
+<div id="CommentsAnchor">
+    <h2>Comments</h2>
+    <div id="wikiComments">
+        
+
+<div id="comment32680">
+    <div class="SubText">
+        <a name="C32680">
+        </a><a href="https://www.codeplex.com/site/users/view/VenkatesanDinesh">VenkatesanDinesh</a>
+        <span class="smartDate" title="22.12.2016 08:27:28" localtimeticks="1482424048">Dec 22, 2016 at 8:27 AM</span>&nbsp;
+        
+    </div>
+    hello sir, <br><br>im using ghostscript to convert pdf to jpg. and i
+ sucessed by your sample coding. i thank you personally. Now i got one 
+issue. i know to know how to ready the property like(Height,width,alpha 
+channel,ICC profile etc) of the pfd using ghostscript., is it possible 
+using gs or i need to used someother scrpting to get the property. 
+please reply as soon as possible.<br><br>thank you<br>Warm Regards<br>Venkatesan<p></p>
+</div>
+
+<div id="comment31672">
+    <div class="SubText">
+        <a name="C31672">
+        </a><a href="https://www.codeplex.com/site/users/view/bartek4c">bartek4c</a>
+        <span class="smartDate" title="20.05.2015 15:38:27" localtimeticks="1432161507">May 20, 2015 at 3:38 PM</span>&nbsp;
+        
+    </div>
+    I was trying to use GhostscriptRasterizer class as per example above, but line <br>_rasterizer.Open(inputPdfPath, _lastInstalledVersion, false);<br>runs into error:<br>An error occured when call to 'gsapi_init_with_args' is made: -15<br>Did anyone else experianced that?<p></p>
+</div>
+    </div>
+    
+        <div id="addComment">
+            <a id="SignInToAddCommentLink" href="https://www.codeplex.com/site/login?RedirectUrl=https%3a%2f%2fghostscriptnet.codeplex.com%2fdocumentation%3fFocusElement%3dComment">Sign in to add a comment</a>
+        </div>
+    
+</div>
+                </div>
+            
+    </div>
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#deleteWikiHyperLink').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', true, '30em');
+            });
+            $('#DeleteButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+                CodePlex.UpdateProgress.show();
+                $.ajax({
+                    type: 'DELETE',
+                    url: 'https://ghostscriptnet.codeplex.com/documentation',
+                    data: {title: $('#WikiTitle').val()},
+                    success: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                        window.location = data;
+                    },
+                    error: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                    }
+                });
+            });
+            $('#CancelButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+            });
+            
+            
+        });
+    </script>
+</div>
+
+        
+	<div id="right_sidebar">
+        
+
+<input name="" maxlength="500" id="wiki_search" title="Search Wiki and Documentation" class="EmptyTextBox" value="Search Wiki &amp; Documentation" type="text"><a id="SearchButton" class="wiki_magnify" href="#" title="Search Wiki and Documentation"></a>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#wiki_search').keypress(function (e) {
+            if (e.keyCode == 13) {
+                wikiSearch();
+                return false;
+            }
+        });
+
+        $('#SearchButton').click(function () {
+            wikiSearch();
+            return false;
+        });
+
+        $('#wiki_search').promptBox('Search Wiki & Documentation');
+
+    });
+    function setWikiCommentTextBoxFocus() {
+        $('#Comment').focus();
+        return false;
+    }
+
+    function wikiSearch() {
+        var $textbox = $('#wiki_search');
+        if($textbox.attr('dirty') != 'true')
+            return;
+        var searchText = encodeURIComponent(jQuery.trim($textbox.val()));
+        if(searchText != null & searchText.length > 0)
+            window.location.href = 'https://ghostscriptnet.codeplex.com/wiki/search?tab=Documentation&SearchText=' + searchText;
+    }
+
+</script>
+
+<script type="text/javascript">
+    var requirementsActionUri = 'https://ghostscriptnet.codeplex.com/documentation/requirements';
+    var requirementsToDelete = [];
+    
+    
+
+    function LoadRequirements(json) {
+        var html = '';
+        if (json === undefined || !json.length) {
+            html = '<div id="NoRequirementsDefined">There are currently no defined requirements.</div>';
+        } else {
+            for (var i = 0; i < json.length; i++) {
+               var requirementType = json[i];
+                html += '<h3>' + requirementType.Caption + '</h3><ul>';
+                for (var j = 0; j < requirementType.Requirements.length; j++) {
+                    var requirement = requirementType.Requirements[j];
+                    html += '<li>' + requirement.DisplayTitle + '</li>';
+                }
+                html += '</ul>';
+            }
+        }
+        
+        $('#RequirementsBody').html(html);
+    }
+
+    $(document).ready(function() {
+        LoadRequirements();
+    });
+</script>
+
+<div id="RequirementsContainer">
+    <h2>
+        System Requirements
+        
+    </h2>
+    <div class="clear"></div>
+    <div id="RequirementsBody"><div id="NoRequirementsDefined">There are currently no defined requirements.</div></div>
+</div>
+
+
+<div id="LoungeAdsDiv" lj6sevc="" hidden="">
+	<div id="Ad1" data-type="ad" data-publisher="" data-zone="ron" style="width: 300px; height: 250px; margin: 0px auto;" data-site="C-ghostscriptnet" data-format="300x250" data-tags="C%23%2cghostscript%2cgrayscale%2cManaged%2cPDF%2cwrapper">
+	</div>
+    <p id="adzerk_by" class="LoungeAdsBottomLinks" lj6sevc="" hidden="">
+        <a href="http://developermedia.com/" target="_blank">Ads by Developer Media</a>
+        
+    </p>
+</div>
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script>
+
+
+    </div>
+
+        
+                
+                <div class="clear"></div>
+                
+                <div id="footer">
+                    <div class="row">
+                        <hr>
+                        <ul>
+                            <li>© 2006-2017 Microsoft</li>
+                            <li><a href="https://www.codeplex.com/site/help">Get Help</a></li>
+                            <li><a href="https://ghostscriptnet.codeplex.com/site/legal/privacy">Privacy Statement</a></li>
+                            <li><a href="https://www.codeplex.com/site/legal/terms">Terms of Use</a></li>
+                            <li><a href="https://www.codeplex.com/site/legal/conduct">Code of Conduct</a></li>
+                            <li><a href="http://developermedia.com/" target="_blank">Advertise With Us</a></li>
+                            <li>Version 10.16.2017.21063</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+
+<div style="display: none; z-index: 1000; outline: 0px none; position: absolute;" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-UpdateProgressPanel"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-UpdateProgressPanel">&nbsp;</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="UpdateProgressPanel" class="loading_animation ui-dialog-content ui-widget-content" style="">
+                <div class="row">
+                    <h2 class="anim_h2">
+                        <span id="UpdateProgressText">Updating...</span>
+                        <span id="animatedLoadingIconContainer">
+                            <img id="animatedLoadingIcon" src="Ghostscript.NET%20-%20Documentation-Dateien/loading_animation.gif" class="anim_img">
+                        </span>
+                    </h2>
+                </div>
+            </div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div></body></html>
